@@ -19,12 +19,30 @@
 - operatore % 
 
 Preparazione:
-- creo due variabili Fizz e Buzz
-- creo due variabili "resto_3" e "resto_5"
+- creo due costanti Fizz e Buzz
+- creo variabili "resto_3" "resto_5" "resto_tot" "message"
 - creo un ciclo for che incrementi la variabile i da 1 a 100 (incluso)
-- nelle due variabili "resto_3" e "resto_5" calcolo il resto della divisione di i per 3 e per 5
-- sommo in un'altra variabile i due resti: se il numero è divisibile sia per 3 che per 5 questa variabile conterrà uno 0
-- utilizzo un if/else if per verificare in quale delle varie casistiche rientro e stampo 
+    - nelle due variabili "resto_3" e "resto_5" calcolo il resto della divisione di i per 3 e per 5
+    - sommo in un'altra variabile i due resti: se il numero è divisibile sia per 3 che per 5 questa variabile conterrà uno 0
+    - utilizzo un if/else if per verificare in quale delle varie casistiche rientro
+    - stampo a seconda della casisticanb m
 */
 
+
+//Elaborazione
+
+//dichiarazione/inizializzazione variabili
+const fizz = 'Fizz'
+const buzz = 'Buzz'
+let message = ''
+let resto_3
+let resto_5
+let resto_tot
+
+//ciclo for 1-100
+for (let i = 1; i <= 100; i++) {
+    resto_3 = i % 3
+    resto_5 = i % 5
+    resto_tot = resto_3 + resto_5
+}
 
