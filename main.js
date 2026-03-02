@@ -4,6 +4,7 @@ const buzz = 'Buzz';
 let message = '';
 let resto_3;
 let resto_5;
+const output = document.getElementById("output");
 
 
 //ciclo for 1-100
@@ -16,23 +17,24 @@ for (let i = 1; i <= 100; i++) {
     //SE i è divisibile per 3 e non per 5
 
     if (resto_3 === 0 && resto_5 === 0) {
-        message = `${fizz}${buzz}`
+        message = (`${fizz}${buzz}`);
     }
     //ALTRIMENTI SE i è divisibile per 3 
     else if (resto_3 === 0) {
-        message = fizz
+        message = fizz;
     }
     //ALTRIMENTI SE i è divisibile per 5
     else if (resto_5 === 0) {
-        message = buzz
+        message = buzz;
     }
     //ALTRIMENTI se non è divisibile nè per 3 nè per 5
     else {
-        message = i
+        message = i;
     }
 
     //stampo il risultato sia in console che sulla pagina
-    console.log(message)
+    console.log(message);
+    output.innerHTML += message + ` `;
 
 }
 
