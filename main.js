@@ -34,7 +34,8 @@ for (let i = 1; i <= 100; i++) {
 
     //stampo il risultato sia in console che sulla pagina
     console.log(message);
-    output.innerHTML += message + ` `;
+    output.innerHTML += `<div class="col col-12 col-sm-6 col-md-3" style="height: 40px">${message}</div>`;
+
 
 }
 
