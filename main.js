@@ -3,7 +3,7 @@ const fizz = 'Fizz';
 const buzz = 'Buzz';
 const fizz_style = 'bg-primary ';
 const buzz_style = 'bg-warning';
-const fizzbuzz_style = 'bg-danger fs-5';
+const fizzbuzz_style = 'bg-danger fs-4';
 const default_style = 'bg-success';
 
 let message = '';
@@ -26,7 +26,7 @@ for (let i = 1; i <= 100; i++) {
     //SE i è divisibile per 3 e non per 5
 
     if (resto_3 === 0 && resto_5 === 0) {
-        message = (`${fizz}${buzz}`);
+        message = (`${fizz}${buzz}!`);
         style = fizzbuzz_style;
     }
     //ALTRIMENTI SE i è divisibile per 3 
@@ -47,8 +47,10 @@ for (let i = 1; i <= 100; i++) {
 
     //stampo il risultato sia in console che sulla pagina
     console.log(message);
-    output.innerHTML += `<div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-gradient text-white">
-                        <div class= "${style}">${message}</div>
+    output.innerHTML += `<div class="col-12 col-sm-6 col-md-3 col-lg-2  ">
+                            <div class= "${style} bg-gradient text-white d-flex align-items-center justify-content-center" style="height: 50px" >
+                                ${message}
+                            </div>
                         </div>`;
 
 
