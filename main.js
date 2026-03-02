@@ -3,7 +3,7 @@ const fizz = 'Fizz';
 const buzz = 'Buzz';
 const fizz_style = 'bg-primary ';
 const buzz_style = 'bg-warning';
-const fizzbuzz_style = 'bg-danger';
+const fizzbuzz_style = 'bg-danger fs-5';
 const default_style = 'bg-success';
 
 let message = '';
@@ -47,7 +47,9 @@ for (let i = 1; i <= 100; i++) {
 
     //stampo il risultato sia in console che sulla pagina
     console.log(message);
-    output.innerHTML += `<div class="col-12 col-sm-6 col-md-3 col-lg-2 ${style} bg-gradient text-white p-2 g-1 ">${message}</div>`;
+    output.innerHTML += `<div class="col-12 col-sm-6 col-md-3 col-lg-2 bg-gradient text-white">
+                        <div class= "${style}">${message}</div>
+                        </div>`;
 
 
 }
